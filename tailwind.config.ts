@@ -3,13 +3,10 @@
 /** @type {import('tailwindcss').Config} */
 import type {Config} from 'tailwindcss';
 
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 const config: Config = {
-  content: [
-    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/modules/**/*.{js,ts,jsx,tsx,mdx}',
-  ],
+  content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
     extend: {
       screens: {
@@ -21,15 +18,15 @@ const config: Config = {
         15: '3.75rem',
       },
       spacing: {
-        '4.5': '1.125rem',
-        '8.5': '2.125rem',
-        '9.5': '2.375rem',
-        '11.5': '2.875rem',
+        4.5: '1.125rem',
+        8.5: '2.125rem',
+        9.5: '2.375rem',
+        11.5: '2.875rem',
         13: '3.25rem',
         15: '3.75rem',
         17: '4.25rem',
         19: '4.75rem',
-        '22.5': '5.625rem',
+        22.5: '5.625rem',
         23: '5.75rem',
         25: '6.25rem',
         27: '6.75rem',
@@ -44,16 +41,16 @@ const config: Config = {
         43: '10.75rem',
         77: '19.25rem',
         84: '21rem',
-        '91.5': '22.875rem',
+        91.5: '22.875rem',
         95: '23.75rem',
         100: '25rem',
         101: '25.25rem',
         110: '27.5rem',
-        '123.5': '30.875rem',
+        123.5: '30.875rem',
         136: '34rem',
         155: '38.75rem',
         162: '40.5rem',
-        '196.5': '49.125rem',
+        196.5: '49.125rem',
         205: '51.25rem',
       },
       borderRadius: {
@@ -65,24 +62,39 @@ const config: Config = {
         '2/3': '1.5px',
       },
       fontFamily: {
-        suisse: ['Suisse Intl', 'sans-serif'],
+        poppins: ['Poppins', ...defaultTheme.fontFamily.sans],
+        sans: ['"Nunito Sans"', ...defaultTheme.fontFamily.sans],
       },
       fontSize: {
-        '2xl': ['34px', {lineHeight: '40px', letterSpacing: '-0.02em'}],
-        xl: ['24px', {lineHeight: '28px', letterSpacing: '-0.01em'}],
-        l: ['20px', {lineHeight: '24px', letterSpacing: '-0.01em'}],
-        m: ['15px', {lineHeight: '24px', letterSpacing: '-0.01em'}],
+        '3xl': ['56px', {lineHeight: '55px', letterSpacing: '-1%em'}],
+        '2xl': ['34px', {lineHeight: '40px', letterSpacing: '-1%em'}],
+        xl: ['24px', {lineHeight: '32px', letterSpacing: '0em'}],
+        l: ['17px', {lineHeight: '60px', letterSpacing: '20%'}],
+        m: ['15px', {lineHeight: '26px', letterSpacing: '0em'}],
         s: ['12px', {lineHeight: '16px', letterSpacing: '0em'}],
         xs: ['8px', {lineHeight: '12px', letterSpacing: '0em'}],
       },
-      
+
+      colors: {
+        main: {
+          100: '#FFFFFF',
+          300: '#F5F5F8',
+          900: '#353844',
+        },
+        primary: {
+          300: '#506BCA',
+          700: '#1B264F',
+        },
+      },
+
       fontWeight: {
         regular: '400',
         medium: '500',
         semibold: '600',
+        bold: '700',
       },
-     
     },
   },
 };
+
 export default config;

@@ -20,11 +20,8 @@
     ],
     "paths": {
       "@/*": ["./src/*"],
-      "@/modules/*": ["./src/modules/*"],
-      "@/core/*": ["./src/modules/core/*"],
-      "@/map/*": ["./src/modules/map/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "tailwind.config.js"],
   "exclude": ["node_modules"]
 }
