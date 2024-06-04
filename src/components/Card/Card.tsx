@@ -17,8 +17,7 @@ const Card: FC<CardProps> = ({img, img2, text, list, title}) => {
           <img src={img2} className='h-1/2 rounded-bl-lg' />
         </div>
       ) : (
-        <div
-          className={`flex min-w-[183px] flex-col gap-1 rounded-s-lg bg-[url('${img}')]`}>
+        <div className='flex min-w-[183px] flex-col gap-1 rounded-s-lg'>
           <img src={img} className='h-full rounded-bl-lg' />
         </div>
       )}
