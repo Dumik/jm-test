@@ -10,9 +10,9 @@ const config: Config = {
   theme: {
     extend: {
       screens: {
-        mobile: {min: '320px', max: '743px'},
-        tablet: {min: '744px', max: '1279px'},
-        desktop: {min: '1280px'},
+        mobile: {min: '320px', max: '839px'},
+        tablet: {min: '840px', max: '1369px'},
+        desktop: {min: '1370px'},
       },
       minWidth: {
         15: '3.75rem',
@@ -53,14 +53,6 @@ const config: Config = {
         196.5: '49.125rem',
         205: '51.25rem',
       },
-      borderRadius: {
-        '20px': '20px',
-        '30px': '30px',
-      },
-      borderWidth: {
-        '1/2': '0.5px',
-        '2/3': '1.5px',
-      },
       fontFamily: {
         poppins: ['Poppins', ...defaultTheme.fontFamily.sans],
         sans: ['"Nunito Sans"', ...defaultTheme.fontFamily.sans],
@@ -80,6 +72,9 @@ const config: Config = {
           100: '#FFFFFF',
           300: '#F5F5F8',
           900: '#353844',
+        },
+        secondary: {
+          100: '#D2AD81',
         },
         primary: {
           300: '#506BCA',
