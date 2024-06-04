@@ -23,7 +23,9 @@ const Card: FC<CardProps> = ({img, img2, text, list, title}) => {
       )}
 
       <div className='flex flex-col gap-4 p-8'>
-        <h3 className='text-main-900 text-xl font-bold'>{title}</h3>
+        <h3 className='text-main-900 font-poppins text-xl font-bold'>
+          {title}
+        </h3>
         {list?.length && (
           <ul className='marker:text-secondary-100 list-disc pl-4'>
             {list.map((item, index) => (

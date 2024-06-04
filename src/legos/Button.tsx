@@ -11,7 +11,7 @@ const Button: FC<ButtonProps> = ({title, onClick, className}) => {
   return (
     <button
       className={classNames(
-        'bg-primary-700 rounded-xl px-4 text-center duration-200 hover:opacity-80',
+        'bg-primary-700 font-poppins rounded-xl px-4 text-center duration-200 hover:opacity-80',
         className,
       )}
       onClick={onClick}>

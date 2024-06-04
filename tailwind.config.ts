@@ -3,15 +3,13 @@
 /** @type {import('tailwindcss').Config} */
 import type {Config} from 'tailwindcss';
 
-const defaultTheme = require('tailwindcss/defaultTheme');
-
 const config: Config = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
     extend: {
       screens: {
-        mobile: {min: '320px', max: '839px'},
-        tablet: {min: '840px', max: '1369px'},
+        mobile: {min: '320px', max: '859px'},
+        tablet: {min: '860px', max: '1369px'},
         desktop: {min: '1370px'},
       },
       minWidth: {
@@ -54,14 +52,14 @@ const config: Config = {
         205: '51.25rem',
       },
       fontFamily: {
-        poppins: ['Poppins', ...defaultTheme.fontFamily.sans],
-        sans: ['"Nunito Sans"', ...defaultTheme.fontFamily.sans],
+        poppins: ['"Poppins"'],
+        sans: ['"Nunito Sans"'],
       },
       fontSize: {
-        '3xl': ['56px', {lineHeight: '55px', letterSpacing: '-1%em'}],
-        '2xl': ['34px', {lineHeight: '40px', letterSpacing: '-1%em'}],
+        '3xl': ['56px', {lineHeight: '55px'}],
+        '2xl': ['34px', {lineHeight: '40px'}],
         xl: ['24px', {lineHeight: '32px', letterSpacing: '0em'}],
-        l: ['17px', {lineHeight: '60px', letterSpacing: '20%'}],
+        l: ['17px', {lineHeight: '60px'}],
         m: ['15px', {lineHeight: '26px', letterSpacing: '0em'}],
         s: ['12px', {lineHeight: '16px', letterSpacing: '0em'}],
         xs: ['8px', {lineHeight: '12px', letterSpacing: '0em'}],

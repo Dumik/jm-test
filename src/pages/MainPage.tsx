@@ -61,7 +61,7 @@ const MainPage = () => {
     <MainLayout>
       <div className='flex flex-col items-center gap-10'>
         <div className='w-full max-w-[700px]'>
-          <h1 className='text-primary-700 text-center text-3xl font-bold'>
+          <h1 className='text-primary-700 font-poppins text-center text-3xl font-bold'>
             We make creative media that{' '}
             <span className='text-primary-300'>adds value</span>
           </h1>
